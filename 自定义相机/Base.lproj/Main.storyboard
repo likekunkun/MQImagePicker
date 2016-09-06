@@ -1,25 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-7Z-ScM">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mS-hF-sRS">
+                                        <rect key="frame" x="78" y="28" width="47" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.94986961744707443" blue="0.18561027005227138" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="拍照"/>
+                                        <connections>
+                                            <action selector="takeAPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvS-rB-SJg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAf-6r-9bu">
+                                        <rect key="frame" x="227" y="28" width="58" height="30"/>
+                                        <color key="backgroundColor" red="0.76153850203335738" green="1" blue="0.92182390768965305" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="切换"/>
+                                        <connections>
+                                            <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lp2-MQ-GGh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43028966928029055" green="1" blue="0.82111377157290477" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aM2-cd-MKX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZ3-5r-nCZ" customClass="TakeAPictureView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.45341366723677978" green="1" blue="0.55068512655026447" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EbY-7Z-ScM" secondAttribute="trailing" id="2g9-lV-rUc"/>
+                            <constraint firstItem="EbY-7Z-ScM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IjT-A1-1gz"/>
+                            <constraint firstAttribute="trailing" secondItem="XZ3-5r-nCZ" secondAttribute="trailing" id="NdS-No-he8"/>
+                            <constraint firstItem="XZ3-5r-nCZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XhA-1I-2ow"/>
+                            <constraint firstItem="XZ3-5r-nCZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ao2-69-AT6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EbY-7Z-ScM" secondAttribute="bottom" id="lLh-fZ-LfV"/>
+                            <constraint firstItem="EbY-7Z-ScM" firstAttribute="top" secondItem="XZ3-5r-nCZ" secondAttribute="bottom" id="nvM-Fn-w5x"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottmView" destination="EbY-7Z-ScM" id="Prv-ef-F8n"/>
+                        <outlet property="cameraView" destination="XZ3-5r-nCZ" id="aHP-9V-o0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280.5" y="269.5"/>
         </scene>
     </scenes>
 </document>

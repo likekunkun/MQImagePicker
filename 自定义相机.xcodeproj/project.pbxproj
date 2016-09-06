@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA055E601D7A7DE900A707B7 /* UIImage+info.m in Sources */ = {isa = PBXBuildFile; fileRef = FA055E5F1D7A7DE900A707B7 /* UIImage+info.m */; };
+		FA9B7B5C1D7EA7C700E57A66 /* ShowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B7B5B1D7EA7C700E57A66 /* ShowImageView.m */; };
+		FA9B7B601D7EA7E600E57A66 /* ShowImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9B7B5F1D7EA7E600E57A66 /* ShowImageView.xib */; };
 		FAD182C71D791E1A00E5B700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD182C61D791E1A00E5B700 /* main.m */; };
 		FAD182CA1D791E1A00E5B700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD182C91D791E1A00E5B700 /* AppDelegate.m */; };
 		FAD182CD1D791E1A00E5B700 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD182CC1D791E1A00E5B700 /* ViewController.m */; };
@@ -15,6 +18,7 @@
 		FAD182D51D791E1A00E5B700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD182D31D791E1A00E5B700 /* LaunchScreen.storyboard */; };
 		FAD182E01D791E1A00E5B700 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD182DF1D791E1A00E5B700 /* _____Tests.m */; };
 		FAD182EB1D791E1A00E5B700 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD182EA1D791E1A00E5B700 /* _____UITests.m */; };
+		FAD182FA1D79279800E5B700 /* TakeAPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD182F91D79279800E5B700 /* TakeAPictureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA055E5E1D7A7DE900A707B7 /* UIImage+info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+info.h"; sourceTree = "<group>"; };
+		FA055E5F1D7A7DE900A707B7 /* UIImage+info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+info.m"; sourceTree = "<group>"; };
+		FA9B7B5A1D7EA7C700E57A66 /* ShowImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowImageView.h; sourceTree = "<group>"; };
+		FA9B7B5B1D7EA7C700E57A66 /* ShowImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowImageView.m; sourceTree = "<group>"; };
+		FA9B7B5F1D7EA7E600E57A66 /* ShowImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowImageView.xib; sourceTree = "<group>"; };
 		FAD182C21D791E1A00E5B700 /* 自定义相机.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义相机.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD182C61D791E1A00E5B700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAD182C81D791E1A00E5B700 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,8 @@
 		FAD182E61D791E1A00E5B700 /* 自定义相机UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义相机UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD182EA1D791E1A00E5B700 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		FAD182EC1D791E1A00E5B700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD182F81D79279800E5B700 /* TakeAPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeAPictureView.h; sourceTree = "<group>"; };
+		FAD182F91D79279800E5B700 /* TakeAPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeAPictureView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,13 @@
 				FAD182C91D791E1A00E5B700 /* AppDelegate.m */,
 				FAD182CB1D791E1A00E5B700 /* ViewController.h */,
 				FAD182CC1D791E1A00E5B700 /* ViewController.m */,
+				FA055E5E1D7A7DE900A707B7 /* UIImage+info.h */,
+				FA055E5F1D7A7DE900A707B7 /* UIImage+info.m */,
+				FAD182F81D79279800E5B700 /* TakeAPictureView.h */,
+				FAD182F91D79279800E5B700 /* TakeAPictureView.m */,
+				FA9B7B5A1D7EA7C700E57A66 /* ShowImageView.h */,
+				FA9B7B5B1D7EA7C700E57A66 /* ShowImageView.m */,
+				FA9B7B5F1D7EA7E600E57A66 /* ShowImageView.xib */,
 				FAD182CE1D791E1A00E5B700 /* Main.storyboard */,
 				FAD182D11D791E1A00E5B700 /* Assets.xcassets */,
 				FAD182D31D791E1A00E5B700 /* LaunchScreen.storyboard */,
@@ -244,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD182D51D791E1A00E5B700 /* LaunchScreen.storyboard in Resources */,
+				FA9B7B601D7EA7E600E57A66 /* ShowImageView.xib in Resources */,
 				FAD182D21D791E1A00E5B700 /* Assets.xcassets in Resources */,
 				FAD182D01D791E1A00E5B700 /* Main.storyboard in Resources */,
 			);
@@ -271,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD182CD1D791E1A00E5B700 /* ViewController.m in Sources */,
+				FA9B7B5C1D7EA7C700E57A66 /* ShowImageView.m in Sources */,
 				FAD182CA1D791E1A00E5B700 /* AppDelegate.m in Sources */,
+				FA055E601D7A7DE900A707B7 /* UIImage+info.m in Sources */,
+				FAD182FA1D79279800E5B700 /* TakeAPictureView.m in Sources */,
 				FAD182C71D791E1A00E5B700 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +520,7 @@
 				FAD182F11D791E1A00E5B700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD182F21D791E1A00E5B700 /* Build configuration list for PBXNativeTarget "自定义相机Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				FAD182F41D791E1A00E5B700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD182F51D791E1A00E5B700 /* Build configuration list for PBXNativeTarget "自定义相机UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				FAD182F71D791E1A00E5B700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
