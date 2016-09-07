@@ -7,4 +7,4 @@
     self.previewLayer.frame = self.bounds;
     [self.layer addSublayer:self.previewLayer];
     
-    // 为了使剪裁的效果没有偏差  这里应该选这个AVLayerVideoGravityResize类型。 demo里面选的使别的， 记得修改哦
+    // 为了使剪裁的效果没有偏差  这里应该选这个AVLayerVideoGravityResize类型。 demo里面选的是别的类型， 记得修改哦
