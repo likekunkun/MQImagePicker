@@ -1,8 +1,8 @@
 # MQImagePicker
 简单的自定义相机 支持正反镜头
 在 初始化预览层的地方  有这个代码：
+
     self.previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.session];
-    
     [self.previewLayer setVideoGravity:AVLayerVideoGravityResize];
     self.previewLayer.frame = self.bounds;
     [self.layer addSublayer:self.previewLayer];
